@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Server Buttons for Alis.io
-// @version     1.0
+// @version     1.1
 // @author      Havoc
 // @match       http://alis.io/*
 // @match       http://*.alis.io/*
@@ -26,11 +26,11 @@ const havocStyle = $(`
 			background: 0 0;
 			color: #fff;
 			border: 1px solid #1660a0;
+            font-size: 12px;
 		}
 	</style>
 `);
 $('html > head').append(havocStyle);
-
 
 unsafeWindow.iterateResponse = (obj, selectedRegion, gamemodes = []) => {
 	Object.keys(obj).forEach(item => {
@@ -60,7 +60,7 @@ unsafeWindow.back = () => {
 
 $('#gamemodelistcontent').append(`
 <div id="havoc-servers">
-    <div id ="havoc-gamemodes">
+    <div id="havoc-gamemodes" style="max-height: 365px; overflow-y: scroll; display: inline-block;">
     </div>
     <div id="havoc-servers-regions" style="">
         <div id="havoc-eu-server" class="uk-button uk-button-default havoc-region-btn uk-button-large uk-width-small" onclick ="regionClicked(this.id)">EU</div>
@@ -69,6 +69,7 @@ $('#gamemodelistcontent').append(`
     </div>
 </div>
 `);
+
 $('#gamemodelistcontent').append(`
 <button id="havoc-back-btn" class="uk-button uk-button-default uk-button-small uk-grid-margin uk-first-column" onclick="back()" style="
     margin-top: 30px;
