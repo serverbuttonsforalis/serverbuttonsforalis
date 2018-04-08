@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Server Buttons for Alis.io
-// @version     1.1
+// @version     1.2
 // @author      Havoc
 // @match       http://alis.io/*
 // @match       http://*.alis.io/*
