@@ -14,6 +14,9 @@
 // @grant       GM_xmlhttpRequest
 // ==/UserScript==
 
+$('#gamemodeinstancelist').remove();
+$('.uk-tab').remove();
+
 const havocStyle = $(`
 	<style>
 		.havoc-region-btn {
