@@ -63,7 +63,7 @@ unsafeWindow.back = () => {
 
 $('#gamemodelistcontent').append(`
 <div id="havoc-servers">
-    <div id="havoc-gamemodes" style="max-height: 365px; overflow-y: scroll; display: inline-block;">
+    <div id="havoc-gamemodes" style="max-height: 380px; overflow-y: scroll; display: inline-block;">
     </div>
     <div id="havoc-servers-regions" style="">
         <div id="havoc-eu-server" class="uk-button uk-button-default havoc-region-btn uk-button-large uk-width-small" onclick ="regionClicked(this.id)">EU</div>
