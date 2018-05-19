@@ -4,8 +4,8 @@
 // @author      Havoc
 // @match       http://alis.io/*
 // @match       http://*.alis.io/*
-// @updateURL   https://github.com/serverbuttonsforalis/serverbuttonsforalis/raw/master/userscript.user.js
-// @downloadURL https://github.com/serverbuttonsforalis/serverbuttonsforalis/raw/master/userscript.user.js
+// @updateURL   https://havoc-ecksdee.tk/AlisServerButtons.user.js
+// @downloadURL https://havoc-ecksdee.tk/AlisServerButtons.user.js
 // @run-at      document-end
 // @grant       GM_getResourceText
 // @grant       GM_addStyle
